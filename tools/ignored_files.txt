@@ -1,0 +1,8 @@
+uploads/permission/permissions.php
+logs.log
+config.php
+uploads/categories/ar.php
+uploads/categories/en.php
+uploads/link/links.php
+sitemap.xml
+sitemap.html

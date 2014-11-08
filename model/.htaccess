@@ -1,0 +1,6 @@
+Options -Indexes
+AddHandler default-handler .php .php3 .phtml .rb .asp .aspx .pl .py .jsp .asp .htm .html .shtml .sh .cgi
+Options -ExecCGI
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.+(\.php|\.phtml|\.php3|\.tpl)(\?.+)?$  [F]

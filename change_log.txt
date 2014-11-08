@@ -1,0 +1,89 @@
+### Version 1.1.1 Revision: 1243
+--------------------------------
+lib/parent_model.php
+	added get_all_by_*()
+	added get_one_by_*()
+	added get_all()
+	changed str_table_name to __table_name
+	fixed the return value of methods that should return arrays
+	
+model/translation.php
+	added __table_name
+	removed get_one_by_id()
+
+json.php
+xml.php
+lib/http.php
+	added get()
+	added post()
+	removed request();
+	added support for SSL (needs testing)
+
+
+### Version 1.1.2 Revision: 1250
+--------------------------------
+- Changed the subdomains module to be domains module and updated the links module and router.php
+- Removed Site_Name from config.php
+
+
+### Version 1.1.3 Revision: 1252
+--------------------------------
+- Changed parent_model::arr_paging_pages to parent_model::__paging_pages and editted all framework modules
+- 
+
+### Version 1.1.4 Revision: 2624
+--------------------------------
+- Fixed links add bug
+- Added ajax Framework
+- Fixed Page edit bug with links.
+- Made some bug fixes on config.php
+
+
+### Version 1.1.5 Revision: 2625
+--------------------------------
+- Made some bug Fixes on lib/mysql.php
+
+### Version 1.1.6 Revision: 2626
+--------------------------------
+- Fixed a bug in http.php HTTP1.0 added in response
+
+### Version 1.1.7 Revision: 2790
+--------------------------------
+Added ajax queue
+removed global window scope framework functions and moved them under FW
+
+
+### Version 1.1.8 Revision: 3059
+--------------------------------
+Handled Links Refresh Problem by redirecting to the index action
+Added index() to all controllers
+added captcha smarty function and parent_model::check_captcha()
+Dumped Database
+
+
+
+
+### Version 1.1.9 Revision: 3119
+--------------------------------
+changed parent_model::__table_name ot __table
+changed mysql.php and sqlite.php to factory design pattern using PHP 5
+Added __set, __get, __isset, __unset magic methods to parent_model
+Removed set_property
+changed parent_model to php 5.1
+added the SESSION_TIMEOUT constant again
+get_all_by_
+get_one_by_
+add_validation()
+is_field_valid used with __set & array_to_this()
+
+
+
+### Version 1.2.0 Revision: 3908
+--------------------------------
+- Changed all files from windows-1256 encoding to UTF-8
+- Changed tools/svn_up.sh script
+- Changed prepare.sh to be faster
+- parent_controller->redirect() accepts string isntead of an array (uses action only or controller/action only string)
+
+
+
